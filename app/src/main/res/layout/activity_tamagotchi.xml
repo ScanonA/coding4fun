@@ -81,7 +81,7 @@
             android:background="@drawable/coin"></android.support.v7.widget.ButtonBarLayout>
 
         <android.support.v7.widget.ButtonBarLayout
-            android:id="@+id/ToScanButton"
+            android:id="@+id/scan"
             android:layout_width="55dp"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"

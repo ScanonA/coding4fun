@@ -27,7 +27,7 @@ public class tamagotchi extends AppCompatActivity {
             }
         });
 
-        final Button button2 = findViewById(R.id.ToScanButton);
+        final ButtonBarLayout button2 = findViewById(R.id.scan);
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
