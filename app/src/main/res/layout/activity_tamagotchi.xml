@@ -54,15 +54,15 @@
 
         <android.support.v7.widget.ButtonBarLayout
             android:id="@+id/leader"
-            android:layout_width="56dp"
-            android:layout_height="59dp"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
             android:layout_alignParentBottom="true"
             android:background="@drawable/trophy"></android.support.v7.widget.ButtonBarLayout>
 
         <android.support.v7.widget.ButtonBarLayout
             android:id="@+id/gps"
             android:layout_width="55dp"
-            android:layout_height="57dp"
+            android:layout_height="40dp"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="150dp"
             android:layout_marginRight="29dp"
@@ -82,7 +82,7 @@
         <android.support.v7.widget.ButtonBarLayout
             android:id="@+id/scan"
             android:layout_width="55dp"
-            android:layout_height="57dp"
+            android:layout_height="40dp"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="28dp"
             android:layout_marginBottom="0dp"
