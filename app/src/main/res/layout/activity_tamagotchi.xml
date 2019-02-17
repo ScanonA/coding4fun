@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -29,6 +29,7 @@
         </LinearLayout>
     </LinearLayout>
 
+
     // This is the imageview which overlay the first LinearLayout
     <ImageView
         android:id="@+id/trash"
@@ -44,8 +45,6 @@
         android:layout_width="275dp"
         android:layout_height="275dp"
         android:src="@drawable/pengu"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="225dp"
         android:adjustViewBounds="true"
         android:layout_gravity="center"/>
 
@@ -68,4 +67,4 @@
         android:background="@drawable/datbeach"/>
 	-->
 
-</RelativeLayout>
+</FrameLayout>
