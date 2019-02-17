@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.ButtonBarLayout;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -72,15 +73,14 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-    /*
-        final Button button = findViewById(R.id.ToTamagotchi);
+
+        final ButtonBarLayout button = findViewById(R.id.tomo);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
                 next_page(v);
             }
         });
-      */
     }
         public void next_page(View v) {
             Intent intent = new Intent(this, tamagotchi.class);
