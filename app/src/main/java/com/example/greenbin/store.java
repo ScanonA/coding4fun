@@ -29,7 +29,7 @@ import android.widget.ListView;
 
 public class store extends AppCompatActivity {
 
-    String[] hats = new String[4];
+    String[] hats = {"tophat"};
     String[] pants = new String[2];
     private ListView storeItems;
 
