@@ -20,7 +20,9 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_tamagotchi" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_tamagotchi" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -34,8 +36,10 @@
         android:id="@+id/ToMapButton"
         android:layout_width="246dp"
         android:layout_height="328dp"
+        android:onClick="toMap()"
         android:text="Button"
-        android:onClick="toMap()"/>
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="right|bottom" />
 
 
 </android.support.design.widget.CoordinatorLayout>
