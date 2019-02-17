@@ -72,7 +72,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
+    /*
         final Button button = findViewById(R.id.ToTamagotchi);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -80,6 +80,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 next_page(v);
             }
         });
+      */
     }
         public void next_page(View v) {
             Intent intent = new Intent(this, tamagotchi.class);
