@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Leadersboard">
+
+        <TableLayout
+            android:layout_width="383dp"
+            android:layout_height="736dp"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="Player1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="5dip"
+                    android:text="750 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="David"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="5dip"
+                    android:text="250 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="Steven"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="5dip"
+                    android:text="100 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="Juan "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="30 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="The dust"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="5 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="Bob"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="5 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="Ricardo"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="3 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="August"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="2 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="Elvis"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="1 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="Maria"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="1 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="Luke"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="5 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="Mario"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="5 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="Rebecca"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="5 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="London" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="5 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="Doctor Who" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="5 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+        </TableLayout>
+    </RelativeLayout>
+</ScrollView>
