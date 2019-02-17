@@ -107,7 +107,16 @@ public class SimpleScannerActivity extends AppCompatActivity {
         boolean found = false;
         for ( String s : HardCodedValueBase ) {
             if (Text_.equals(s)) {
-                //TODO: Increment score/points by 5
+
+                long credits = ((MyApplication) this.getApplication()).getCredits();
+                long score = ((MyApplication) this.getApplication()).getScore();
+
+                credits += 5;
+                score   += 5;
+
+                ((MyApplication) this.getApplication()).setCredits(credits);
+                ((MyApplication) this.getApplication()).setScore(score);
+
                 Toast.makeText(SimpleScannerActivity.this, "5 Points for: " + Text_, Toast.LENGTH_SHORT).show();
                 found = true;
             }
