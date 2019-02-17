@@ -24,14 +24,24 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class store extends AppCompatActivity {
 
-    String[] hats = {"tophat"};
+    int[] hats = {R.drawable.tophat};
+    String[] hatNames = {"tophat"};
+    int[] hatPrice = {5};
     String[] pants = new String[2];
     private ListView storeItems;
+    private AdapterView adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,8 +90,33 @@ public class store extends AppCompatActivity {
 //            }
 //        });
 
+        List<HashMap<String, String>> myList = new ArrayList<HashMap<String, String>>();
 
-        storeItems = (ListView) findViewById(R.id.storeItems);
+        for (int i = 0; i < hats.length; i++) {
+            HashMap<String, String> hm = new HashMap<String, String>();
+            hm.put("hat_names", hatNames[i]);
+            //hm.put("hat_price", Integer.toString(hatPrice[i]));
+            hm.put("hat_image", Integer.toString(hats[i]));
+            myList.add(hm);
+        }
+        String[] from = {"hat_image", "hat_names"};
+        //int[] to = {R.id.listview_image, R.id.listview_item_title};
+        //SimpleAdapter simpleAdapter = new SimpleAdapter(getBaseContext(), myList, R.layout.listview_activity, from, to);
+        //ListView androidListView = (ListView) findViewById(R.id.storeItems);
+        //androidListView.setAdapter(simpleAdapter);
+
+
+
+        //storeItems = (ListView) findViewById(R.id.storeItems);
+        //storeItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        //    @Override
+        //    public void onItemClick(AdapterView<?> parent, View view,
+        //                            int position, long id) {
+        //        Toast.makeText(getApplicationContext(),
+        //                "Click ListItem Number " + position, Toast.LENGTH_LONG)
+        //                .show();
+        //    }
+        //});
     }
 
     @Override
@@ -91,7 +126,7 @@ public class store extends AppCompatActivity {
         return true;
     }
 
-    @Override
+    /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Change the map type based on the user's selection.
         ImageView image;
@@ -118,7 +153,7 @@ public class store extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
+    }*/
 
 
     //Copy-pasta Gotos
