@@ -16,10 +16,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ListDisplay"
-            android:label="@string/title_activity_list_display"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
             android:name=".tamagotchi"
             android:label="@string/title_activity_tamagotchi"
             android:theme="@style/AppTheme.NoActionBar">
