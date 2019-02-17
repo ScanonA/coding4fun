@@ -11,32 +11,20 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <android.support.design.widget.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
-        app:menu="@menu/bottom_navigation_tomogatchi" />
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-        // this is your first layout to put the big image
-        // use src or backgroud image as per requirement
 
-        <LinearLayout
-            android:background="@drawable/clean"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </LinearLayout>
-
-        // this is your bottom layout
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/clean">
 
         </LinearLayout>
     </LinearLayout>
@@ -56,9 +44,22 @@
         android:layout_width="275dp"
         android:layout_height="275dp"
         android:src="@drawable/pengu"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="225dp"
         android:adjustViewBounds="true"
         android:layout_gravity="center"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.BottomNavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="775dp"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_navigation_tomogatchi" />
+    </LinearLayout>
 <!--    <Button
         android:id="@+id/ToMapButton"
         android:layout_width="78dp"
