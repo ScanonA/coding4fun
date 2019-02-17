@@ -35,6 +35,14 @@ public class tamagotchi extends AppCompatActivity {
             }
         });
 
+        final ButtonBarLayout button3 = findViewById(R.id.shop);
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                next_page3(v);
+            }
+        });
+
     }
 
     public void next_page(View v) {
@@ -44,6 +52,11 @@ public class tamagotchi extends AppCompatActivity {
 
     public void next_page2(View v) {
         Intent intent = new Intent(this, SimpleScannerActivity.class);
+        startActivity(intent);
+    }
+
+    public void next_page3(View v) {
+        Intent intent = new Intent(this, store.class);
         startActivity(intent);
     }
 
