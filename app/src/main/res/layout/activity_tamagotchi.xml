@@ -31,7 +31,7 @@
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/ToMapButton"
         android:layout_width="246dp"
         android:layout_height="328dp"
         android:text="Button"

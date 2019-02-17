@@ -26,23 +26,23 @@ public class tamagotchi extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+
+        final Button button = findViewById(R.id.ToMapButton);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                next_page(v);
+            }
+        });
+
     }
 
 
-//    // i get the reference to the button from the XML
-//    Button button = (Button)findViewById(R.id.button);
-//    // now i set the listener
-//    button.setOnClickListener(new View.OnClickListener()
-//    {
-//        @Override
-    public void toMap() {
-        // Here you should add the code you want to execute when the button is clicked
-        // In our case we want to open the activity
+    public void next_page(View v) {
         Intent intent = new Intent(this, MapsActivity.class);
-        // It will open the activity
         startActivity(intent);
-        // ... and stop.
-//        }
-//    });
     }
+
+
 }
