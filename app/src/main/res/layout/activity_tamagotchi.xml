@@ -40,5 +40,13 @@
         app:layout_anchor="@+id/include"
         app:layout_anchorGravity="bottom|center" />
 
+    <Button
+        android:id="@+id/ToScanButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="Button"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="top|center" />
+
 
 </android.support.design.widget.CoordinatorLayout>

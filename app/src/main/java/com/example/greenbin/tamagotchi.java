@@ -36,6 +36,14 @@ public class tamagotchi extends AppCompatActivity {
             }
         });
 
+        final Button button2 = findViewById(R.id.ToScanButton);
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                next_page2(v);
+            }
+        });
+
     }
 
 
@@ -44,5 +52,10 @@ public class tamagotchi extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+    public void next_page2(View v) {
+        Intent intent = new Intent(this, SimpleScannerActivity.class);
+        startActivity(intent);
+    }
 
 }
