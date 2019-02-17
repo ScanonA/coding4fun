@@ -34,7 +34,7 @@
 
     <Button
         android:id="@+id/ToMapButton"
-        android:layout_width="411dp"
+        android:layout_width="78dp"
         android:layout_height="85dp"
         android:text="Button"
         app:layout_anchor="@+id/include"
