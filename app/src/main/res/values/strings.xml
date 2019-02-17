@@ -4,6 +4,8 @@
     <string name="hybrid_map">Hybrid</string>
     <string name="satellite_map">Satellite</string>
     <string name="terrain_map">Terrain</string>
+    <string name="hats">Hats</string>
+    <string name="pants">Pants</string>
     <string name="title_activity_tamagotchi">Tamagotchi</string>
     <string name="title_activity_leaderboard">Leaderboard</string>
 
@@ -11,4 +13,5 @@
     <string name="title_activity_list_display">ListDisplay</string>
     <string name="title_activity_scanner">Scanner</string>
 
+    <string name="title_store">Store</string>
 </resources>

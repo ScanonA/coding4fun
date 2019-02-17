@@ -19,32 +19,75 @@ public class tamagotchi extends AppCompatActivity {
         ImageView trash = findViewById(R.id.trash);
         trash.setVisibility(View.VISIBLE);
 
-        final ButtonBarLayout button = findViewById(R.id.gps);
-        button.setOnClickListener(new View.OnClickListener() {
+
+
+        //Copy-pasta button mapings:
+//        final ButtonBarLayout buttonT = findViewById(R.id.tomo);
+//        buttonT.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                // Code here executes on main thread after user presses button
+//                gotoTomo(v);
+//            }
+//        });
+
+        final ButtonBarLayout buttonG = findViewById(R.id.gps);
+        buttonG.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
-                next_page(v);
+                gotoGps(v);
             }
         });
 
-        final ButtonBarLayout button2 = findViewById(R.id.scan);
-        button2.setOnClickListener(new View.OnClickListener() {
+        //Copy-pasta button mapings:
+        final ButtonBarLayout buttonS = findViewById(R.id.scan);
+        buttonS.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
-                next_page2(v);
+                gotoScanner(v);
+            }
+        });
+
+        final ButtonBarLayout buttonL = findViewById(R.id.leader);
+        buttonL.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                gotoLeader(v);
+            }
+        });
+
+        final ButtonBarLayout buttonSh = findViewById(R.id.shop);
+        buttonSh.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                gotoShop(v);
             }
         });
 
     }
 
-    public void next_page(View v) {
+    //Copy-pasta Gotos
+    public void gotoGps(View v) {
         Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
 
-    public void next_page2(View v) {
+    public void gotoScanner(View v) {
         Intent intent = new Intent(this, SimpleScannerActivity.class);
         startActivity(intent);
     }
 
+    public void gotoTomo(View v) {
+        Intent intent = new Intent(this, tamagotchi.class);
+        startActivity(intent);
+    }
+
+    public void gotoShop(View v) {
+        Intent intent = new Intent(this, store.class);
+        startActivity(intent);
+    }
+
+    public void gotoLeader(View v) {
+        Intent intent = new Intent(this, Leadersboard.class);
+        startActivity(intent);
+    }
 }
