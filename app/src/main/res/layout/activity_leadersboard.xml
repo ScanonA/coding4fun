@@ -63,7 +63,7 @@
                 <TextView
 
                     android:padding="5dip"
-                    android:text="David"
+                    android:text="Daniel"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
@@ -88,7 +88,7 @@
                 <TextView
 
                     android:padding="5dip"
-                    android:text="Steven"
+                    android:text="Sven"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
@@ -113,7 +113,7 @@
 
                 <TextView
                     android:padding="5dip"
-                    android:text="Scott "
+                    android:text="Sasha "
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
@@ -137,7 +137,7 @@
                 <TextView
 
                     android:padding="5dip"
-                    android:text="Juan"
+                    android:text="Jules"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
