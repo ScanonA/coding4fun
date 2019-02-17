@@ -11,23 +11,18 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Greenbit"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".leaderboard"
-            android:label="@string/title_activity_leaderboard"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".ListDisplay"
+            android:label="@string/title_activity_list_display"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".tamagotchi"
             android:label="@string/title_activity_tamagotchi"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,9 +43,8 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/app_name">
+            android:label="Greenbit">
             <intent-filter>
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
