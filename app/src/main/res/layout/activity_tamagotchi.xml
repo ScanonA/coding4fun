@@ -4,8 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tamagotchi"
-    android:background="@drawable/datbeach">
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <android.support.design.widget.BottomNavigationView
         android:layout_width="match_parent"
@@ -18,19 +22,42 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
+        // this is your first layout to put the big image
+        // use src or backgroud image as per requirement
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <LinearLayout
+            android:background="@drawable/clean"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="match_parent">
 
-    </android.support.design.widget.AppBarLayout>
+        </LinearLayout>
 
-    <include
-        android:id="@+id/include"
-        layout="@layout/content_tamagotchi" />
+        // this is your bottom layout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    // This is the imageview which overlay the first LinearLayout
+    <ImageView
+        android:id="@+id/trash"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:rotation="-45.0"
+        android:visibility="invisible"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bottle" />
+    <ImageView
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:src="@drawable/pengu"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"/>
 
 <!--    <Button
         android:id="@+id/ToMapButton"

@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class tamagotchi extends AppCompatActivity {
 
@@ -15,8 +16,9 @@ public class tamagotchi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tamagotchi);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
+        ImageView trash = findViewById(R.id.trash);
+        trash.setVisibility(View.VISIBLE);
 
 
 //        final Button button = findViewById(R.id.ToMapButton);
@@ -34,4 +36,7 @@ public class tamagotchi extends AppCompatActivity {
 //        Intent intent = new Intent(this, MapsActivity.class);
 //        startActivity(intent);
     }
+
+
+
 }
