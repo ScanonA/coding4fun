@@ -21,31 +21,36 @@
 
         </LinearLayout>
 
-        <ImageView
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cleany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="@dimen/nav_bar_height"
+                android:visibility="visible"
+                android:src="@drawable/clean">
+
+            </ImageView>
+
+            <ImageView
                 android:id="@+id/trashy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
                 android:layout_marginBottom="@dimen/nav_bar_height"
+                android:visibility="invisible"
                 android:src="@drawable/dirty">
-        </ImageView>
-
+            </ImageView>
+        </RelativeLayout>
 
     </LinearLayout>
 
 
-    // This is the imageview which overlay the first LinearLayout
-
-        <!--<ImageView-->
-            <!--android:id="@+id/trash"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:scaleType="centerCrop"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:layout_marginBottom="@dimen/nav_bar_height"-->
-            <!--android:visibility="visible"-->
-            <!--android:adjustViewBounds="true"-->
-            <!--android:src="@drawable/dirty" />-->
 
     <ImageView
         android:layout_width="275dp"
