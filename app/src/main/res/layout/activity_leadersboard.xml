@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/ScrollView01"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -19,16 +20,26 @@
 
             <TableRow>
 
-                <TextView
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:src="@drawable/coin" />
+
+                />
+
+                <TextView
+
                     android:padding="5dip"
                     android:text="Player1"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
 
                 <TextView
+                    android:layout_width="match_parent"
                     android:gravity="right"
                     android:padding="5dip"
-                    android:text="750 pts"
+                    android:text="750 gps"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
             </TableRow>
 
@@ -38,16 +49,23 @@
 
             <TableRow>
 
-                <TextView
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:src="@drawable/ic_person" />
+
+
+                <TextView
+
                     android:padding="5dip"
                     android:text="David"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
                     android:gravity="right"
                     android:padding="5dip"
-                    android:text="250 pts"
+                    android:text="250 gps"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
             </TableRow>
 
@@ -57,16 +75,23 @@
 
             <TableRow>
 
-                <TextView
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:src="@drawable/ic_person" />
+
+                <TextView
+
                     android:padding="5dip"
                     android:text="Steven"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
+                    android:layout_width="match_parent"
                     android:gravity="right"
                     android:padding="5dip"
-                    android:text="100 pts"
+                    android:text="100 gps"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
             </TableRow>
 
@@ -76,15 +101,20 @@
 
             <TableRow>
 
-                <TextView
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:src="@drawable/ic_android" />
+
+                <TextView
                     android:padding="5dip"
                     android:text="Juan "
-                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
                     android:padding="5dip"
-                    android:text="30 pts"
+                    android:text="30 gps"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
             </TableRow>
 
@@ -94,15 +124,21 @@
 
             <TableRow>
 
-                <TextView
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:src="@drawable/ic_person" />
+
+                <TextView
+
                     android:padding="5dip"
-                    android:text="The dust"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+                    android:text="Dusty"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
                     android:padding="5dip"
-                    android:text="5 pts"
+                    android:text="25 gps"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             </TableRow>
@@ -113,16 +149,20 @@
 
 
             <TableRow>
-
-                <TextView
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:src="@drawable/ic_android" />
+                <TextView
+
                     android:padding="5dip"
                     android:text="Bob"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
                     android:padding="5dip"
-                    android:text="5 pts"
+                    android:text="15 gps"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             </TableRow>
@@ -132,16 +172,20 @@
                 android:background="#FF909090" />
 
             <TableRow>
-
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:src="@drawable/coin" />
                 <TextView
                     android:layout_column="1"
                     android:padding="5dip"
                     android:text="Ricardo"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
                     android:padding="5dip"
-                    android:text="3 pts"
+                    android:text="10 gps"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             </TableRow>
@@ -152,15 +196,21 @@
 
             <TableRow>
 
-                <TextView
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:src="@drawable/ic_person" />
+
+                <TextView
+
                     android:padding="5dip"
                     android:text="August"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
                     android:padding="5dip"
-                    android:text="2 pts"
+                    android:text="7 gps"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             </TableRow>
@@ -170,16 +220,20 @@
                 android:background="#FF909090" />
 
             <TableRow>
-
-                <TextView
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:src="@drawable/ic_android" />
+                <TextView
+
                     android:padding="5dip"
                     android:text="Elvis"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
                     android:padding="5dip"
-                    android:text="1 pts"
+                    android:text="5 gps"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             </TableRow>
@@ -190,15 +244,21 @@
 
             <TableRow>
 
-                <TextView
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:src="@drawable/ic_smile" />
+
+                <TextView
+
                     android:padding="5dip"
                     android:text="Maria"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
                     android:padding="5dip"
-                    android:text="1 pts"
+                    android:text="4 gps"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             </TableRow>
@@ -209,15 +269,21 @@
 
             <TableRow>
 
-                <TextView
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:src="@drawable/ic_person" />
+
+                <TextView
+
                     android:padding="5dip"
                     android:text="Luke"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
                     android:padding="5dip"
-                    android:text="5 pts"
+                    android:text="4 gps"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             </TableRow>
@@ -226,17 +292,21 @@
                 android:layout_height="2dip"
                 android:background="#FF909090" />
 
-            <TableRow>
+            <TableRow> <ImageView
+                android:layout_width="99dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:src="@drawable/ic_smile" />
 
                 <TextView
-                    android:layout_column="1"
+
                     android:padding="5dip"
                     android:text="Mario"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
                     android:padding="5dip"
-                    android:text="5 pts"
+                    android:text="3 gps"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             </TableRow>
@@ -247,15 +317,21 @@
 
             <TableRow>
 
-                <TextView
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:src="@drawable/ic_smile" />
+
+                <TextView
+
                     android:padding="5dip"
                     android:text="Rebecca"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
                     android:padding="5dip"
-                    android:text="5 pts"
+                    android:text="1 gps"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             </TableRow>
@@ -265,7 +341,11 @@
                 android:background="#FF909090" />
 
             <TableRow>
-
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:src="@drawable/ic_android" />
                 <TextView
                     android:layout_column="1"
                     android:padding="5dip"
@@ -283,6 +363,134 @@
                 android:background="#FF909090" />
 
             <TableRow>
+
+                TableRow>
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:src="@drawable/ic_android" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="Doctor Who" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="5 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+                TableRow>
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:src="@drawable/ic_android" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="Doctor Who" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="5 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                TableRow>
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:src="@drawable/ic_android" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="Doctor Who" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="5 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:src="@drawable/ic_android" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="Doctor Who" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="5 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:src="@drawable/ic_person" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="5dip"
+                    android:text="Doctor Who" />
+
+                <TextView
+                    android:padding="5dip"
+                    android:text="5 pts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:src="@drawable/coin" />
 
                 <TextView
                     android:layout_column="1"
