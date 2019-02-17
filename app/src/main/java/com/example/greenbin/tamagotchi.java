@@ -22,7 +22,8 @@ public class tamagotchi extends AppCompatActivity {
 
         if (score < 15)
             trash.setVisibility(View.VISIBLE);
-
+        else
+            trash.setVisibility(View.INVISIBLE);
 
 
         //Copy-pasta button mapings:

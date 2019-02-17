@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
                 android:layout_marginBottom="@dimen/nav_bar_height"
-                android:visibility="invisible"
+                android:visibility="visible"
                 android:src="@drawable/dirty">
             </ImageView>
         </RelativeLayout>
