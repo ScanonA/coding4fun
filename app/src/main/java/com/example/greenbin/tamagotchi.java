@@ -16,7 +16,7 @@ public class tamagotchi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tamagotchi);
 
-        ImageView trash = findViewById(R.id.trash);
+        ImageView trash = findViewById(R.id.trashy);
 
         long score = ((GreenBin) this.getApplication()).getScore();
 
