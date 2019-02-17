@@ -36,7 +36,6 @@
         android:id="@+id/ToMapButton"
         android:layout_width="246dp"
         android:layout_height="328dp"
-        android:onClick="toMap()"
         android:text="Button"
         app:layout_anchor="@+id/include"
         app:layout_anchorGravity="right|bottom" />
