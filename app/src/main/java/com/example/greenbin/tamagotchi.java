@@ -17,7 +17,11 @@ public class tamagotchi extends AppCompatActivity {
         setContentView(R.layout.activity_tamagotchi);
 
         ImageView trash = findViewById(R.id.trashy);
-        trash.setVisibility(View.VISIBLE);
+
+        long score = ((GreenBin) this.getApplication()).getScore();
+
+        if (score < 15)
+            trash.setVisibility(View.VISIBLE);
 
 
 
@@ -62,7 +66,6 @@ public class tamagotchi extends AppCompatActivity {
                 gotoShop(v);
             }
         });
-
     }
 
     //Copy-pasta Gotos
