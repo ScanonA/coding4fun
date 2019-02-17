@@ -51,20 +51,28 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <android.support.design.widget.BottomNavigationView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <android.support.v7.widget.ButtonBarLayout
+            android:layout_width="135dp"
+            android:layout_height="61dp"
             android:layout_alignParentBottom="true"
-            app:menu="@menu/bottom_navigation_tomogatchi" />
+            android:background="@drawable/ic_plus_one_black_24dp"></android.support.v7.widget.ButtonBarLayout>
+
+        <android.support.v7.widget.ButtonBarLayout
+            android:layout_width="135dp"
+            android:layout_height="61dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="150dp"
+            android:background="@drawable/ic_place_black_24dp"></android.support.v7.widget.ButtonBarLayout>
+
+        <android.support.v7.widget.ButtonBarLayout
+            android:layout_width="135dp"
+            android:layout_height="61dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/ic_add_shopping_cart_black_24dp"></android.support.v7.widget.ButtonBarLayout>
     </RelativeLayout>
-<!--    <Button
-        android:id="@+id/ToMapButton"
-        android:layout_width="78dp"
-        android:layout_height="85dp"
-        android:text="Button"
-        app:layout_anchor="@+id/include"
-        app:layout_anchorGravity="bottom|center"
-        android:background="@drawable/datbeach"/>
-	-->
+
 
 </FrameLayout>
