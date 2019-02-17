@@ -68,9 +68,11 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+        float DEFAULT_ZOOM = 17.0f;
         // Add a marker in Sydney and move the camera
         LatLng calgary = new LatLng(51.078621, -114.136719);
         mMap.addMarker(new MarkerOptions().position(calgary).title("Marker in Calgary"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(calgary));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(calgary, DEFAULT_ZOOM));
     }
 }
