@@ -109,7 +109,7 @@
 
                 <TextView
                     android:padding="5dip"
-                    android:text="Juan "
+                    android:text="Scott "
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
@@ -133,7 +133,7 @@
                 <TextView
 
                     android:padding="5dip"
-                    android:text="Dusty"
+                    android:text="Juan"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
                 <TextView
@@ -148,17 +148,23 @@
                 android:background="#FF909090" />
 
 
-            <TableRow>
+            <TableRow  android:background="#F6D555">
+
                 <ImageView
                     android:layout_width="99dp"
                     android:layout_height="match_parent"
                     android:layout_column="1"
                     android:src="@drawable/ic_android" />
+
                 <TextView
 
                     android:padding="5dip"
-                    android:text="Bob"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                    android:text="Bob(You)"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+
+
+                    />
+
 
                 <TextView
                     android:padding="5dip"
