@@ -19,22 +19,27 @@ import com.google.zxing.Result;
 
 import static android.support.constraint.Constraints.TAG;
 
+
 public class SimpleScannerActivity extends AppCompatActivity {
     private CodeScanner mCodeScanner;
+
+    String[] HardCodedValueBase = {"06793401", "06942508", "060383758783"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         //Get permissions
 
-        while (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
-                != PackageManager.PERMISSION_GRANTED) { ActivityCompat.requestPermissions(SimpleScannerActivity.this, new String[] {Manifest.permission.CAMERA}, 42); try { Thread.sleep(10); } catch(Exception e) {} }
+        while (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(SimpleScannerActivity.this, new String[] {Manifest.permission.CAMERA}, 42);
+            try { Thread.sleep(100); } catch(Exception e) {}
+        }
 
-
-                super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanner);
         CodeScannerView scannerView = findViewById(R.id.scanner_view);
         mCodeScanner = new CodeScanner(this, scannerView);
+
         final Activity activity = SimpleScannerActivity.this;
         mCodeScanner.setDecodeCallback(new DecodeCallback() {
             @Override
@@ -42,7 +47,7 @@ public class SimpleScannerActivity extends AppCompatActivity {
                 activity.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(activity, result.getText(), Toast.LENGTH_SHORT).show();
+                        handleResult(result.getText());
                     }
                 });
             }
@@ -65,5 +70,19 @@ public class SimpleScannerActivity extends AppCompatActivity {
     protected void onPause() {
         mCodeScanner.releaseResources();
         super.onPause();
+    }
+
+    protected void handleResult(String Text_){
+        boolean found = false;
+        for ( String s : HardCodedValueBase ) {
+            if (Text_.equals(s)) {
+                //TODO: Increment score/points by 5
+                Toast.makeText(SimpleScannerActivity.this, "5 Points for: " + Text_, Toast.LENGTH_SHORT).show();
+                found = true;
+            }
+        }
+        if (! found){
+            Toast.makeText(SimpleScannerActivity.this, Text_, Toast.LENGTH_SHORT).show();
+        }
     }
 }
