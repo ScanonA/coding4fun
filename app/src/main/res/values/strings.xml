@@ -11,4 +11,5 @@
     <string name="title_activity_list_display">ListDisplay</string>
     <string name="title_activity_scanner">Scanner</string>
 
+    <string name="title_store">Store</string>
 </resources>

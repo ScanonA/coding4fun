@@ -3,4 +3,47 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.ButtonBarLayout
+            android:id="@+id/leader"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/trophy"></android.support.v7.widget.ButtonBarLayout>
+
+        <android.support.v7.widget.ButtonBarLayout
+            android:id="@+id/gps"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toLeftOf="@id/shop"
+            android:background="@drawable/nav"></android.support.v7.widget.ButtonBarLayout>
+
+        <android.support.v7.widget.ButtonBarLayout
+            android:id="@+id/shop"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/scan"></android.support.v7.widget.ButtonBarLayout>
+
+        <android.support.v7.widget.ButtonBarLayout
+            android:id="@+id/tomo"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@id/leader"
+            android:background="@drawable/tomo_red"></android.support.v7.widget.ButtonBarLayout>
+    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>

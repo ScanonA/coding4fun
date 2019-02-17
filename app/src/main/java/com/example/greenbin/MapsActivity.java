@@ -100,6 +100,21 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
         });
 
+        final ButtonBarLayout buttonL = findViewById(R.id.leader);
+        buttonL.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                gotoLeader(v);
+            }
+        });
+
+        final ButtonBarLayout buttonSh = findViewById(R.id.shop);
+        buttonSh.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                gotoShop(v);
+            }
+        });
     }
 
     //Copy-pasta Gotos
@@ -115,6 +130,16 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     public void gotoTomo(View v) {
         Intent intent = new Intent(this, tamagotchi.class);
+        startActivity(intent);
+    }
+
+    public void gotoShop(View v) {
+        Intent intent = new Intent(this, store.class);
+        startActivity(intent);
+    }
+
+    public void gotoLeader(View v) {
+        Intent intent = new Intent(this, Leadersboard.class);
         startActivity(intent);
     }
 
