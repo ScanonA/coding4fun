@@ -6,6 +6,7 @@ import android.support.constraint.solver.widgets.Rectangle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.ButtonBarLayout;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class tamagotchi extends AppCompatActivity {
