@@ -22,11 +22,12 @@
         </LinearLayout>
 
         <ImageView
+                android:id="@+id/trashy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
                 android:layout_marginBottom="@dimen/nav_bar_height"
-                android:src="@drawable/clean">
+                android:src="@drawable/dirty">
         </ImageView>
 
 
@@ -34,16 +35,18 @@
 
 
     // This is the imageview which overlay the first LinearLayout
-    <ImageView
-        android:id="@+id/trash"
-        android:layout_width="wrap_content"
-        android:layout_height="275dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="12dp"
-        android:rotation="-45.0"
-        android:visibility="invisible"
-        android:adjustViewBounds="true"
-        android:src="@drawable/bottle" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/trash"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginBottom="@dimen/nav_bar_height"-->
+            <!--android:visibility="visible"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:src="@drawable/dirty" />-->
+
     <ImageView
         android:layout_width="275dp"
         android:layout_height="275dp"
