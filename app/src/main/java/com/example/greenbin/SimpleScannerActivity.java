@@ -108,14 +108,14 @@ public class SimpleScannerActivity extends AppCompatActivity {
         for ( String s : HardCodedValueBase ) {
             if (Text_.equals(s)) {
 
-                long credits = ((MyApplication) this.getApplication()).getCredits();
-                long score = ((MyApplication) this.getApplication()).getScore();
+                long credits = ((GreenBin) this.getApplication()).getCredits();
+                long score = ((GreenBin) this.getApplication()).getScore();
 
                 credits += 5;
                 score   += 5;
 
-                ((MyApplication) this.getApplication()).setCredits(credits);
-                ((MyApplication) this.getApplication()).setScore(score);
+                ((GreenBin) this.getApplication()).setCredits(credits);
+                ((GreenBin) this.getApplication()).setScore(score);
 
                 Toast.makeText(SimpleScannerActivity.this, "5 Points for: " + Text_, Toast.LENGTH_SHORT).show();
                 found = true;
