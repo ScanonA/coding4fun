@@ -22,8 +22,6 @@ public class tamagotchi extends AppCompatActivity {
 
         if (score < 15)
             trash.setVisibility(View.VISIBLE);
-        ImageView trash = findViewById(R.id.trashy);
-        trash.setVisibility(View.VISIBLE);
 
 
 
