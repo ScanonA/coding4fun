@@ -79,6 +79,14 @@ public class SimpleScannerActivity extends AppCompatActivity {
             }
         });
 
+        final ButtonBarLayout buttonS = findViewById(R.id.shop);
+        buttonS.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                gotoShop(v);
+            }
+        });
+
 //        //Copy-pasta button mapings:
 //        final ButtonBarLayout buttonS = findViewById(R.id.scan);
 //        buttonS.setOnClickListener(new View.OnClickListener() {
