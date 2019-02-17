@@ -13,6 +13,7 @@
     <uses-sdk tools:overrideLibrary="com.budiyev.android.codescanner"/>
 
     <application
+        android:name=".GreenBin"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Greenbin"
