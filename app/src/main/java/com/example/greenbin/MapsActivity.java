@@ -74,19 +74,49 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        final ButtonBarLayout button = findViewById(R.id.tomo);
-        button.setOnClickListener(new View.OnClickListener() {
+        //Copy-pasta button mapings:
+        final ButtonBarLayout buttonT = findViewById(R.id.tomo);
+        buttonT.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
-                next_page(v);
+                gotoTomo(v);
             }
         });
-    }
-        public void next_page(View v) {
-            Intent intent = new Intent(this, tamagotchi.class);
-            startActivity(intent);
-        }
 
+//        final ButtonBarLayout buttonG = findViewById(R.id.gps);
+//        buttonG.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                // Code here executes on main thread after user presses button
+//                gotoGps(v);
+//            }
+//        });
+
+        //Copy-pasta button mapings:
+        final ButtonBarLayout buttonS = findViewById(R.id.scan);
+        buttonS.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                gotoScanner(v);
+            }
+        });
+
+    }
+
+    //Copy-pasta Gotos
+    public void gotoGps(View v) {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoScanner(View v) {
+        Intent intent = new Intent(this, SimpleScannerActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoTomo(View v) {
+        Intent intent = new Intent(this, tamagotchi.class);
+        startActivity(intent);
+    }
 
 
     /**

@@ -79,6 +79,16 @@ public class SimpleScannerActivity extends AppCompatActivity {
             }
         });
 
+//        //Copy-pasta button mapings:
+//        final ButtonBarLayout buttonS = findViewById(R.id.scan);
+//        buttonS.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                // Code here executes on main thread after user presses button
+//                gotoScanner(v);
+//            }
+//        });
+
+
     }
 
     @Override
