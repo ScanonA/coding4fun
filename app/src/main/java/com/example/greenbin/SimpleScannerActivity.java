@@ -2,12 +2,14 @@ package com.example.greenbin;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.ButtonBarLayout;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -58,6 +60,25 @@ public class SimpleScannerActivity extends AppCompatActivity {
                 mCodeScanner.startPreview();
             }
         });
+
+
+        //Copy-pasta button mapings:
+        final ButtonBarLayout buttonT = findViewById(R.id.tomo);
+        buttonT.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                gotoTomo(v);
+            }
+        });
+
+        final ButtonBarLayout buttonG = findViewById(R.id.gps);
+        buttonG.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                gotoGps(v);
+            }
+        });
+
     }
 
     @Override
@@ -84,5 +105,22 @@ public class SimpleScannerActivity extends AppCompatActivity {
         if (! found){
             Toast.makeText(SimpleScannerActivity.this, Text_, Toast.LENGTH_SHORT).show();
         }
+    }
+
+
+    //Copy-pasta Gotos
+    public void gotoGps(View v) {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoScanner(View v) {
+        Intent intent = new Intent(this, SimpleScannerActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoTomo(View v) {
+        Intent intent = new Intent(this, tamagotchi.class);
+        startActivity(intent);
     }
 }
